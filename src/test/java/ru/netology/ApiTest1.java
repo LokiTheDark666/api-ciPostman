@@ -14,8 +14,6 @@ class ApiTest1 {
                 .when()
                 .post("/post")
                 .then()
-                .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
-        ;
+                .statusCode(200);
     }
 }
